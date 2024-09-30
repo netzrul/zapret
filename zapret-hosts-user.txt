@@ -15,5 +15,3 @@ youtube.com
 youtube.googleapis.com
 yt3.ggpht.com
 yt3.googleusercontent.com
-vk.com
-ya.ru
