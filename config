@@ -1,9 +1,9 @@
-# тест ок 4
+#тест ок 5
 # this file is included from init scripts
 # change values here
 
 # can help in case /tmp has not enough space
-#TMPDIR=/opt/zapret/tmp
+TMPDIR=/opt/zapret/tmp
 
 # redefine user for zapret daemons. required on Keenetic
 #WS_USER=nobody
@@ -66,30 +66,20 @@ MODE_QUIC=1
 MODE_FILTER=hostlist
 
 # CHOOSE NFQWS DAEMON OPTIONS for DPI desync mode. run "nfq/nfqws --help" for option list
-# SUFFIX VARS define additional lower priority desync profile. it's required if MODE_FILTER=hostlist and strategy has hostlist-incompatible 0-phase desync methods (syndata,wssize)
 DESYNC_MARK=0x40000000
 DESYNC_MARK_POSTNAT=0x20000000
 NFQWS_OPT_DESYNC="--dpi-desync=fake,disorder2 --dpi-desync-split-pos=1 --dpi-desync-ttl=0 --dpi-desync-fooling=md5sig,badsum --dpi-desync-repeats=6 --dpi-desync-any-protocol --dpi-desync-cutoff=d4 --dpi-desync-fake-tls=/opt/zapret/files/fake/tls_clienthello_www_google_com.bin"
 #NFQWS_OPT_DESYNC="--dpi-desync=fake,split2 --dpi-desync-ttl=4 --dpi-desync-ttl6=2 --dpi-desync-split-pos=1 --wssize 1:6 --dpi-desync-fooling=md5sig"
-#NFQWS_OPT_DESYNC_SUFFIX="--dpi-desync=syndata"
-#NFQWS_OPT_DESYNC_HTTP=""
-#NFQWS_OPT_DESYNC_HTTP_SUFFIX="--dpi-desync=syndata"
-#NFQWS_OPT_DESYNC_HTTPS=""
-#NFQWS_OPT_DESYNC_HTTPS_SUFFIX="--wssize 1:6"
-#NFQWS_OPT_DESYNC_HTTP6=""
-#NFQWS_OPT_DESYNC_HTTP6_SUFFIX="--dpi-desync=syndata"
-#NFQWS_OPT_DESYNC_HTTPS6=""
-#NFQWS_OPT_DESYNC_HTTPS6_SUFFIX="--wssize 1:6"
+#NFQWS_OPT_DESYNC_HTTP=
+#NFQWS_OPT_DESYNC_HTTPS=
+#NFQWS_OPT_DESYNC_HTTP6=
+#NFQWS_OPT_DESYNC_HTTPS6=
 NFQWS_OPT_DESYNC_QUIC="--dpi-desync=fake --dpi-desync-repeats=6 --dpi-desync-ttl=0 --dpi-desync-any-protocol --dpi-desync-cutoff=d4 --dpi-desync-fooling=md5sig,badsum --dpi-desync-fake-quic=/opt/zapret/files/fake/quic_initial_www_google_com.bin"
 #NFQWS_OPT_DESYNC_QUIC="--dpi-desync=fake --dpi-desync-repeats=6"
-#NFQWS_OPT_DESYNC_QUIC_SUFFIX=""
-#NFQWS_OPT_DESYNC_QUIC6="--dpi-desync=hopbyhop"
-#NFQWS_OPT_DESYNC_QUIC6_SUFFIX=""
+#NFQWS_OPT_DESYNC_QUIC6=
 
 # CHOOSE TPWS DAEMON OPTIONS. run "tpws/tpws --help" for option list
-# SUFFIX VARS define additional lower priority desync profile. it's required if MODE_FILTER=hostlist and strategy has hostlist-incompatible 0-phase desync methods (mss)
-TPWS_OPT="--hostspell=HOST --split-http-req=method --split-pos=3 --oob"
-#TPWS_OPT_SUFFIX="--mss 88"
+TPWS_OPT="--host dot --hostspell=HOST --split-http-req=method --split-pos=3 --oob"
 
 # openwrt only : donttouch,none,software,hardware
 FLOWOFFLOAD=donttouch
