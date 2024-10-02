@@ -1,4 +1,4 @@
-www.youtube.com
+play.google.com
 googlevideo.com
 nhacmp3youtube.com
 nonexistent.domain
@@ -15,3 +15,10 @@ youtube.com
 youtube.googleapis.com
 yt3.ggpht.com
 yt3.googleusercontent.com
+ytimg.com
+l.google.com
+youtubei.googleapis.com
+googleusercontent.com
+mdns.mcast.net
+aaplimg.com
+1e100.net
