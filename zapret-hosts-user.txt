@@ -2,7 +2,6 @@ play.google.com
 googlevideo.com
 nhacmp3youtube.com
 nonexistent.domain
-yt3.ggpht.com
 rutracker.org
 medium.com
 ggpht.com
@@ -22,3 +21,16 @@ googleusercontent.com
 mdns.mcast.net
 aaplimg.com
 1e100.net
+gvt1.com
+video.google.com
+youtube-nocookie.com
+youtube-ui.l.google.com
+youtubeeducation.com
+youtubekids.com
+yt.be
+redirector.googlevide
+o.com
+gstatic.com
+youtubei.googleapis.com
+yt4.ggpht.com
+ytimg.l.google.com
